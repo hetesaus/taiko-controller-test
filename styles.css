@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFF;
+	color: #000;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+.Kat {
+	background-color: #69bfc0;
+}
+.Don {
+	background-color: #f84828;
+}
+
+.DrumContainer {
+	position: relative;
+	display: inline-block; 
+	margin-bottom: 5px;
+}
+.Drum {
+	display: block;
+}
+.HitOverlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: auto;
+}
+
+.Description {
+	color: grey;
+	font-size: 10px;
+}
+
+.Button {
+	padding: 8px;
+	font-size: 12px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	min-width: 50px;
+	border-style: hidden;
+}
+.Button:disabled {
+	padding: 6px;
+	font-size: 12px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	min-width: 50px;
+	color: #000;
+	background-color: #fff;
+	border-style: dashed;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiko controller tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="DrumContainer">
+			<img src="Images/drum.png" class="Drum"/>
+			<img id="katLeftImg" src="Images/katLeft.png" class="HitOverlay"/>
+			<img id="katRightImg" src="Images/katRight.png" class="HitOverlay"/>
+			<img id="donLeftImg" src="Images/donLeft.png" class="HitOverlay"/>
+			<img id="donRightImg" src="Images/donRight.png" class="HitOverlay"/>
+		</div>
+
+		<div>
+			<button id="katLeftButton" class="Kat Button">
+				<span id="katLeft">0</span>
+			</button>
+			<button id="donLeftButton" class="Don Button">
+				<span id="donLeft">0</span>
+			</button>
+			<button id="donRightButton" class="Don Button">
+				<span id="donRight">0</span>
+			</button>
+			<button id="katRightButton" class="Kat Button">
+				<span id="katRight">0</span>
+			</button>
+		</div>
+		
+		<div>
+			<p class="Description">Press SPACE to reset counts.</p>
+		</div>
+	</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
