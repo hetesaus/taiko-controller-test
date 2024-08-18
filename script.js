@@ -1,3 +1,5 @@
+// TODO add option to change key
+
 const katLeft = document.getElementById('katLeft');
 const donLeft = document.getElementById('donLeft');
 const donRight = document.getElementById('donRight');
@@ -61,12 +63,12 @@ function reset() {
 }
 
 document.addEventListener('keydown', function(event) {
-	if (event.key === 'd' || event.key === 'D') {
+	if (event.key === 'f' || event.key === 'F') {
 		katLeftCount++;
 		katLeft.innerText = katLeftCount;
 		flashImage(katLeftImg);
 	}
-	if (event.key === 'f' || event.key === 'F') {
+	if (event.key === 'k' || event.key === 'K') {
 		donLeftCount++;
 		donLeft.innerText = donLeftCount;
 		flashImage(donLeftImg);
@@ -76,7 +78,7 @@ document.addEventListener('keydown', function(event) {
 		donRight.innerText = donRightCount;
 		flashImage(donRightImg);
 	}
-	if (event.key === 'k' || event.key === 'K') {
+	if (event.key === 'd' || event.key === 'D') {
 		katRightCount++;
 		katRight.innerText = katRightCount;
 		flashImage(katRightImg);
